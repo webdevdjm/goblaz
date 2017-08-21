@@ -1,6 +1,12 @@
+.about-wrapper {
+  margin: 0 10vw;
+  padding: 10vw 0;
+}
+
 .about {
   color: #515151;
   background-color: #EBEBEB;
+  display: flex;
 
   .desktop-text {
     display: none;
@@ -21,5 +27,21 @@
     line-height: 1.8;
     padding: 10px 0;
     margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 980px) {
+
+  .text-container {
+    display: flex;
+    flex-direction: row;
+
+    .desktop-text {
+      display: block;
+      padding: 0 40px 40px 0;
+    }
+    .mobile-text {
+      padding: 0 40px 40px 0;
+    }
   }
 }

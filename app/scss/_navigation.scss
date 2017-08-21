@@ -40,6 +40,7 @@ a {
   .nav {
 
     .nav-ul {
+      display: flex;
       flex-direction: column;
       max-height: 80vh;
       overflow-y: hidden;
@@ -87,9 +88,9 @@ a {
 
 // ---- End 640 ----
 
-// ---- 920 and up -----
+// ---- 980 and up -----
 
-@media screen and (min-width: 920px) {
+@media screen and (min-width: 980px) {
 
   .navbar {
     height: 100px;
@@ -102,20 +103,29 @@ a {
         display: none;
       }
     }
+
     .nav {
+
       .nav-ul {
         display: flex;
-        flex-direction: row;
-        padding-top: 40px;
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: 100px;
+        li {
 
-        li .nav-link {
-          padding: 0 1em;
-          font-size: 1.2rem;
-          border: none;
+          .nav-link {
+            padding: 0 1em;
+            font-size: 1.2rem;
+            border: none;
+          }
         }
+      }
+      .hide-ul {
+        min-height: 100px;
       }
     }
   }
 }
 
-// ---- End 920 ----
+// ---- End 980 ----
