@@ -27,7 +27,7 @@
 .row-across {
   display: flex;
   justify-content: space-between;
-  width: 70%;
+  padding-right: 10%;
 }
 
 @media screen and (min-width: 640px) {
@@ -65,5 +65,9 @@
     h1 {
       font-size: 4rem;
     }
+  }
+
+  .row-across {
+    max-width: 50%;
   }
 }
