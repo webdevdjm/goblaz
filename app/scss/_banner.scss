@@ -27,7 +27,7 @@
 .row-across {
   display: flex;
   justify-content: space-between;
-  padding-right: 10%;
+  padding-right: 20%;
 }
 
 .chevron a {
@@ -35,6 +35,20 @@
 
   &:hover {
     color: #ccc;
+  }
+}
+
+@media screen and (min-width: 400px) {
+
+  .row-across {
+    padding-right: 30%;
+  }
+}
+
+@media screen and (min-width: 500px) {
+
+  .row-across {
+    padding-right: 40%;
   }
 }
 
@@ -75,7 +89,5 @@
     }
   }
 
-  .row-across {
-    max-width: 50%;
-  }
+  
 }
